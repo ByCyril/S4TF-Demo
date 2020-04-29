@@ -705,7 +705,102 @@
                     <view key="view" id="w7C-VS-K6N">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ioT-Z6-VnS">
+                                <rect key="frame" x="61" y="72" width="96" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="POe-re-BuU"/>
+                                <connections>
+                                    <action selector="sliderDidChange:" target="zcI-QM-w1W" id="gol-KS-j1x"/>
+                                </connections>
+                            </slider>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bDo-19-SOQ">
+                                <rect key="frame" x="176" y="72" width="96" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="QvX-BT-NUU"/>
+                                <connections>
+                                    <action selector="sliderDidChange:" target="zcI-QM-w1W" id="3W7-u1-fsE"/>
+                                </connections>
+                            </slider>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KpT-TQ-mVt">
+                                <rect key="frame" x="294" y="72" width="96" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="gaJ-Qk-64W"/>
+                                <connections>
+                                    <action selector="sliderDidChange:" target="zcI-QM-w1W" id="7Bc-64-EkX"/>
+                                </connections>
+                            </slider>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9EA-BQ-0fE">
+                                <rect key="frame" x="4" y="252" width="104" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Save Input" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="If7-qt-9Ii">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="saveInput:" target="zcI-QM-w1W" id="I4Z-6P-d1Q"/>
+                                </connections>
+                            </button>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sk1-HZ-uyV">
+                                <rect key="frame" x="175" y="180" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </customView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvn-Te-OQ5">
+                                <rect key="frame" x="158" y="156" width="135" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="vmQ-PY-r9E">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3l6-Wj-doO">
+                                <rect key="frame" x="171" y="13" width="126" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Random Color" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YQY-Oz-5gl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="randomColor:" target="zcI-QM-w1W" id="iyR-zh-IZY"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-pd-6N4">
+                                <rect key="frame" x="338" y="13" width="70" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Train" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RmY-PV-etw">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="train:" target="zcI-QM-w1W" id="FlG-m5-ZO0"/>
+                                </connections>
+                            </button>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y3j-1N-tV9">
+                                <rect key="frame" x="18" y="227" width="77" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="7x2-zb-ZRH" id="q8K-Df-HrS">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <menu key="menu" id="NbJ-xt-cIx">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="7x2-zb-ZRH"/>
+                                            <menuItem title="Item 2" id="1D1-RR-q5Z"/>
+                                            <menuItem title="Item 3" id="hLb-cV-khE"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                        </subviews>
                     </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="KpT-TQ-mVt" id="r8g-f2-cZh"/>
+                        <outlet property="colorView" destination="sk1-HZ-uyV" id="vCa-V7-OnF"/>
+                        <outlet property="greenSlider" destination="bDo-19-SOQ" id="tsD-Us-Khs"/>
+                        <outlet property="labelSelector" destination="y3j-1N-tV9" id="Uap-gL-mgm"/>
+                        <outlet property="outputLabel" destination="cvn-Te-OQ5" id="Hpy-pc-J6w"/>
+                        <outlet property="redSlider" destination="ioT-Z6-VnS" id="Mdo-M5-7aJ"/>
+                    </connections>
                 </viewController>
                 <customObject id="Exc-u6-MOI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
